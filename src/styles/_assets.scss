@@ -1,0 +1,15 @@
+// Images
+.thumbnail {
+    img {
+        &.thumb-max {
+            height: 100%;
+        }
+        &.thumb-md {
+            height: 360px;
+        }
+        &.thumb-sm {
+            height: 180px;
+        }
+    }
+}        
+

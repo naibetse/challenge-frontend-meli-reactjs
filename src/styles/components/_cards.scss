@@ -1,0 +1,82 @@
+.card {
+    &a {
+        text-decoration: none;
+    } 
+
+    cursor: pointer;
+    text-decoration: none;
+
+    &:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    &.meli-card-product {   
+
+        background-color: $white;
+        display: block;
+        transition: all 0.3s ease;
+        width: 100%;
+        padding: 1em 0;
+        
+        .card-body {
+            color: $gray-700;
+
+                .card-title {
+                    font-size: 1.2rem;
+                    font-weight: $font-weight-semibold;
+                }
+                
+                .card-price {
+                    font-size: 1.8rem;
+                    font-weight: $font-weight-light;
+                }
+
+
+                .card-freeshipping {
+                    font-weight: $font-weight-semibold;
+                    &.free {
+                        color: $meli-success-green;
+                    }
+                    figure {
+                        fill: $meli-success-green;
+                        display: inline-block;
+                    }
+                }
+
+            .card-condition {
+                color: $gray-700; 
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+    }
+    
+    &:hover {
+        background-color: $gray-100;
+        box-shadow: 0 1px 0 $gray-300; 
+    }
+
+    &.card-list {  
+        margin-bottom: 1px;          
+        .card-body {
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+            .card-price {
+                font-size: 1.4rem;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+    &.rounded {
+        border: 1px solid $gray-300;
+        border-radius: 8px;
+    }
+}

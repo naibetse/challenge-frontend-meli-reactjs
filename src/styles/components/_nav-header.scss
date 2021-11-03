@@ -1,0 +1,14 @@
+.nav-header {
+    background-color: $meli-yellow;
+    position: relative;
+    &::before {
+        box-shadow: 0 0 2px $gray-700;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}

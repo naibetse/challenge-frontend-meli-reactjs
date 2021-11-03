@@ -1,0 +1,20 @@
+// Configurations
+@import './variables';
+
+// Configuration base
+@import  './base';
+
+// Bootstrap core
+@import './bootstrap/bootstrap';
+
+// Layout
+@import './layout';
+
+// Components
+@import './components/nav-header';
+@import './components/searchform';
+@import './components/cards';
+@import './components/breadcrumbs';
+
+// Miscellaneous
+@import './assets';
